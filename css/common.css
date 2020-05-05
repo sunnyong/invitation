@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/*web font*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Open+Sans:300,400,600,700,800');
+
+/*common*/
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 15px; line-height: 1; color: #fff; width: 100%; max-width: 640px; margin: 0 auto; text-align: center; letter-spacing: -0.02em; /*background: linear-gradient(
+    to bottom,
+    rgb(3, 2, 29),
+    rgb(3, 2, 29),
+    rgb(3, 2, 29),
+    rgb(187, 227, 248),
+    rgb(232,59, 73)
+  );*/ }
+.inner{padding: 30px 20px; background-color: #03091d;}
+.wide{padding-left: 0; padding-right: 0;}
+.inner h2{text-align: left; font-size: 24px; margin-bottom: 20px;}
+.wide h2{padding-left: 20px;}
+.white{background: #fff;}
+.white h2{color: #333;}
+.bold{font-weight: 800;}
+.regular{font-weight: 600;}
+.red{color: #ff3f10;}
+.green{color: #3c9742;}
+.small{font-size: 10px;}
+.gray{color: #a9a9a9;}
+
+/* 메인 */
+#main{background-color: #03091d; padding-bottom: 30px; position: relative;}
+#main .main_conpetti img{position: absolute;}
+#main .main_conpetti img:nth-of-type(1){bottom: 55%; left: 3%; animation: move_item1 4s ease-in-out infinite;}
+#main .main_conpetti img:nth-of-type(2){top: 13%; right: 0; animation: move_item2 4s ease-in-out infinite; width: 100px;}
+#main .main_conpetti img:nth-of-type(3){top: 10%; left: 0; animation: move_item2 4s ease-in-out infinite; width: 100px;}
+#main .main_conpetti img:nth-of-type(4){top: 3%; right: 5%; animation: move_item1 4s ease-in-out infinite;}
+#main .main_conpetti img:nth-of-type(5){top: 5%; left: 15%; animation: move_item1 4s ease-in-out infinite;}
+#main .main_conpetti{display: none;}
+#main .main_top{display: none;}
+#main .main_info{margin-top: -120px;}
+#main .main_info h1{display: inline-block; font-size: 40px; position: relative; margin-bottom: 35px; }
+#main .main_info h1 em{font-size: 10px; font-weight: 300; position: absolute; bottom: -15px; right: 0; }
+#main .main_info ul li{display: inline-block; line-height: 1.8em; margin: 0 14px; }
+#main .main_info .bg_bl{display: inline-block; background: #000; line-height: 1.8em; padding: 0 10px; margin-bottom: 10px; }
+#main .main_info .hashtag{margin-top: 30px; margin-bottom: 20px;}
+#main .main_info .hashtag li{display: inline-block; border: 1px solid #fff; border-radius: 100px; line-height: 1.6em; padding: 0 10px; margin: 0 5px; font-size: 12px;}
+#main .main_info .feature .ing{background: rgba(255,255,255,0.3); border-radius: 100px; padding: 0 10px;}
+#main .main_info .score{margin-top:10px; margin-bottom: 30px;}
+#main .main_info .score li{margin: 0 8px;}
+#main .main_info .score .star{margin: 0 10px;}
+#main .main_info .synopsis{text-align: left; line-height: 1.5em; padding: 0 20px;     word-break: keep-all;}
+#main .main_info .more_txt{text-align: left; line-height: 1.5em; padding: 0 20px; display: none;}
+#main .more{border: 1px solid #fff; border-radius: 5px; display: block; padding: 20px; margin: 0 20px; margin-top: 20px; position: relative;}
+#main .more:after{display: block; content: '더보기'; color: #fff; position: absolute; left: 0; right: 0; margin: 0 auto; top: 50%; transform: translateY(-50%);}
+#main .more.on:after{content: '닫기';}
+#main .main_info .more_detail{border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 10px 0; line-height: 2em;}
+
+/* 등장인물 */
+#casting .inner{overflow: hidden;}
+#casting .inner > div{overflow: hidden;}
+#casting .inner > div:first-of-type{margin-bottom: 50px; }
+#casting .img{width:52%; border-radius: 50%; overflow: hidden; float: left; display: inline-block;}
+#casting .img img{display: block;}
+#casting .profile{width: 48%; text-align: left; display: inline-block; padding-left: 10px;}
+#casting .profile h3{font-size: 20px; font-weight: 600;}
+#casting .profile p{line-height: 1.4em;     word-break: keep-all;}
+#casting .btn_pop1, .btn_pop2{cursor: pointer;}
+.story{display: none; background: rgba(255,255,255,0.95); padding: 20px; box-sizing: border-box; text-align: left; color: #333; margin: 0 20px; border-radius: 25px; line-height: 1.5em;}    
+.story img{position: absolute; top: 15px; right: 20px; width: 30px; cursor: pointer;}
+
+/* 예고편 */
+#trailer h2{margin: 0; height: 40px; line-height: 40px; background: #000; margin-top: -1px;}
+#trailer .video_wrap{background: #000; position: relative; padding-bottom: 40px;}
+#trailer .slick-arrow{position: absolute; z-index: 9; top: 0; left: 0; right: 0; margin: 0 auto; margin-top: -20px;width: 25px; height: 25px; }
+#trailer .slick-arrow:before{content: '';}
+#trailer .slick-prev{margin-left: 75%; background: url(../images/arrow_left.png) no-repeat center center; background-size: 15px 10px;}
+#trailer .slick-next{margin-right: 5%; background: url(../images/arrow_right.png) no-repeat center center; background-size: 15px 10px;}
+/*#trailer .video_wrap{background: #000; position: relative; width: 100%; padding-top: 70%;}
+#trailer .video_wrap iframe{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}*/
+    
+/* 스틸컷 */
+#stillcut .center .slick-slide{transform: scale(0.95); transition: all .3s; margin: 0 10px;}
+#stillcut .center .slick-current{transform: scale(1);}
+#stillcut .center > div img{display: inline-block;}
+#stillcut .like{width: 25px; height: 24px; display: block; background: url(../images/icon_like_off.png) no-repeat center top; background-size: cover; margin: 10px; }
+#stillcut .like.on{background-image: url(../images/icon_like_on.png);}
+
+/* 인터뷰 */
+#interview .talk_wrap{background-color: #e4e4e4; border: 1px solid #fff; border-radius: 25px; overflow: hidden; color: #333; padding: 20px; }
+#interview .talk_wrap .talker ~ .talker{margin-top: 25px;}
+#interview .talk_wrap img{width: 30px;}
+#interview .talk_wrap p{background: #fff; display: inline-block; padding: 9px; border-radius: 25px;     word-break: keep-all;}
+#interview .smile{text-align: left; overflow: hidden;}
+#interview .smile ~ .smile{padding-top: 15px;}
+#interview .smile img{float: left;}
+#interview .smile p{float: left; margin-left: 10px; font-weight: 600;}
+#interview .smile p.q_ing > span{animation: talk 0.9s infinite;}
+#interview .smile p.q_off{display: none;}
+#interview .answer{text-align: right; overflow: hidden; display: none;}
+#interview .answer.on{display: block;}
+#interview .answer span{font-size: 16px; line-height: 30px; margin-right: 5px; font-weight: 600; color: #e73b49; display: inline-block; min-width: 203px;}
+#interview .answer.yong span{color: #09509f;}
+#interview .answer img{float: right;}
+#interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.4em;}
+
+/* 한줄평 */
+#review .inner{width: 100%; overflow: hidden; position: relative; height: 170px;}
+#review .rolling{overflow: hidden; position: absolute; width: 1800px; animation: Marquee 14s linear infinite;}
+#review .rolling li{overflow: hidden; float: left; display: inline-block; margin-right: 20px; padding-bottom: 15px;}
+#review .rolling li img{float: left; width: 50px; margin-right: 15px;}
+#review .rolling li p{float: left; font-size: 40px; line-height: 45px; font-weight: 600; position: relative;}
+#review .rolling li p span{font-size: 10px; font-weight: 300; position: absolute; right: 0; bottom: -30px;}
+
+/* 상영관 */
+#theater p{text-align: left; margin-bottom: 30px; line-height: 1.5em;}
+#theater iframe{width: 100%; height: 250px;}
+
+/* 땡스투 */
+#thanks p{color: #333; text-align: left; line-height: 1.5em; word-break: keep-all;}
+#thanks p ~ p{margin-top: 20px; font-size: 11px;}
+#thanks span{margin-right: 3px;}
+#thanks .small{font-size: 10px}
+
+
+/* keyframes */
+@keyframes move_item1 {
+    0%, 100% {transform: translate(0, 0)}
+    50% {transform: translate(-10px, -10px);}
+}
+@-webkit-keyframes move_item1 {
+    0%, 100% {transform: translate(0, 0)}
+    50% {transform: translate(-10px, -10px);}
+}
+
+
+@keyframes move_item2 {
+    0%, 100% {transform: translate(0, 0)}
+    50% {transform: translate(-10px, 10px);}
+}
+@-webkit-keyframes move_item2 {
+    0%, 100% {transform: translate(0, 0)}
+    50% {transform: translate(-10px, 10px);}
+}
+
+@keyframes talk {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+@-webkit-keyframes talk {
+    0%, 100% {opacity: 1}
+    50% {opacity: 0}
+}
+
+@keyframes Marquee {
+    from {-webkit-transform: translateX(0%);transform: translateX(0%);}
+    to {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+}
+@-webkit-keyframes Marquee {
+    from {-webkit-transform: translateX(0%);transform: translateX(0%);}
+    to {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+}
+
+
+
+
