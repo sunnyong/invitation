@@ -37,7 +37,9 @@ $(document).ready(function(){
         centerMode: true,
         slidesToShow: 1,
         arrows:false,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000
     });
     
     $('#stillcut .like').click(function(){
