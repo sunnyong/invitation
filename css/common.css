@@ -103,7 +103,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 
 /* 한줄평 */
 #review .inner{width: 100%; overflow: hidden; position: relative; height: 170px;}
-#review .rolling{overflow: hidden; position: absolute; width: 1800px; animation: Marquee 14s linear infinite; /*width: 3900px; animation: Marquee 30s linear infinite;*/}
+#review .rolling{overflow: hidden; position: absolute; width: 3900px; animation: Marquee 30s linear infinite;}
 #review .rolling li{overflow: hidden; float: left; display: inline-block; margin-right: 20px; padding-bottom: 15px;}
 #review .rolling li img{float: left; width: 50px; margin-right: 15px;}
 #review .rolling li p{float: left; font-size: 40px; line-height: 45px; font-weight: 600; position: relative;}
