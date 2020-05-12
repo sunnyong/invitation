@@ -111,6 +111,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 
 /* 상영관 */
 #theater p{text-align: left; margin-bottom: 30px; line-height: 1.5em;}
+#theater p:first-of-type{margin-bottom: 20px;}
 #theater iframe{width: 100%; height: 250px;}
 
 /* 땡스투 */
